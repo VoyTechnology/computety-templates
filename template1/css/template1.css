@@ -1,0 +1,126 @@
+/* Template 1 */
+
+/* This is a comment in CSS */
+
+/*
+You probably might want to remove the comments so they don't interfere with
+your code
+*/
+
+/*-----------------------------------------*/
+
+/*
+Import a font from Google fonts (free)
+  Pick a font you like on google.com/fonts
+  Click Add to Collection
+  Follow instructions
+  Change from HTML to CSS so it can be pasted here.
+  Replace the font with your own one*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,300);
+
+/*Remove unnecessary border and margin from around the page*/
+* {
+  border:0;
+  margin: 0;
+}
+
+/*You can change the size of rem here (relative em)*/
+html {
+  font-size: 100%;
+}
+
+/*Style the body*/
+body {
+  font-family: 'Roboto', sans-serif;  /* Apply the font you chose to body, use sans-serif as fallback */
+  background-color: #eee;
+}
+
+/*Remove special styling of links*/
+a {
+  text-decoration: none;
+}
+
+/* HEADER STYLES */
+header {
+  width: 100%;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: fixed;    /*                                              */
+  top: 0;             /*   make the header not move as you scroll     */
+  left:0;             /*                                              */
+}
+
+header h1 {
+  font-weight: 500;
+  color: white;
+  margin: 1rem 1rem; /* Add a rem margin so it can be changed */
+  padding: 0.2rem 0.5rem;
+  display: block;
+  border-radius: 0.15rem;
+}
+
+header h1:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+header nav {
+  display: block;
+  position: relative;
+}
+
+header nav a {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.15rem;
+}
+
+header nav a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+header a {
+  color: inherit;
+}
+/* END OF HEADER STYLES */
+
+/* CONTENT STYLES */
+.content {
+  margin-top: 6rem;
+}
+
+.content article {
+  margin: 2rem auto;
+  width: 90%;
+  background-color: white;
+  border-radius: 0.15rem;
+  padding: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+@media screen and (min-width: 1024px){
+  .content article {
+      width: 50%;
+  }
+}
+
+.content article h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  z-index: 100;
+}
+
+.content p {
+  font-weight: 300;
+  margin-top: 1rem;
+  z-index:100;
+}
+
+/*END CONTENT STYLES*/
+
+/*CUSTOM STYLES*/
+.background1 {
+  background: url("https://cdn.razoft.net/images/solar-background.png") center / cover;
+  color: white;
+}
